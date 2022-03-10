@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "dev": "nodemon dist/server.js",
-    "start": "node dist/server.js",
+    "dev": "set NODE_ENV=development&& nodemon dist/server.js",
+    "start": "set NODE_ENV=production&& node dist/server.js",
     "prepare": "rimraf dist/ && tsc && copyfiles -u 1 src/**/*.html src/**/*.hbs src/**/*.css src/**/*.js src/**/*.png src/**/*.jpg src/**/*.txt dist/"
   },
   "keywords": [],
@@ -20,7 +20,6 @@
     "geoip-lite": "^1.4.4",
     "ipware": "^2.0.0",
     "isbot": "^3.4.3",
-    "nodemon": "^2.0.15",
     "reverse-dns-lookup": "^2.0.0"
   },
   "devDependencies": {
@@ -32,6 +31,7 @@
     "copyfiles": "^2.4.1",
     "rimraf": "^3.0.2",
     "tslint": "^6.1.3",
+    "nodemon": "^2.0.15",
     "typescript": "^4.6.2"
   }
 }
