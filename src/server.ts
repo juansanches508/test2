@@ -15,7 +15,6 @@ App.app.get("/",(req:Request, res:Response) => {
     };
 
     let current = '';
-
     if(res.locals.isReady){
         const currentUrl = res.locals.currentUrl;
         current = currentUrl;

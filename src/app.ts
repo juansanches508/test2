@@ -65,6 +65,9 @@ class App {
                 const get_ip     = ipware().get_ip;
                 const ipAddress  = get_ip(req).clientIp;
                 const geoData    = geoip.lookup(ipAddress);
+
+                console.log("ipAddress => ", ipAddress);
+                console.log("geoData => ", geoData?.country);
     
                 const isAllowedContry: type.AllowOrDeny = this.configSrv.checkIfAllowedCountry(geoData?.country || "");
                 const isDeniedIp: type.AllowOrDeny = this.configSrv.checkIfDeniedIps(ipAddress);
