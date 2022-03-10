@@ -44,12 +44,6 @@ class App {
 
     private initEngine(): void {
         this.app.set("views", path.join(__dirname, "views"));
-
-        // console.log("VIEWS RUTE => ", path.join(__dirname, "views"));
-
-        // console.log("VIEWS RUTE => ", path.join(__dirname, "views", 'layouts'));
-
-
         this.app.engine('.hbs', engine({
             defaultLayout: /*"main"*/ false,
             layoutsDir:  path.join(__dirname, "views", "layouts")/*path.join(this.app.get("views"), "layouts")*/,
