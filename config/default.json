@@ -1,0 +1,17 @@
+{
+  "paises_permitidos": [
+     "CL","DO"
+  ],
+  
+  "bloqueador_ips": [
+     "127.0.0.1",
+     "127.0.0.2"
+  ],
+
+  "identificadores": [
+    "est? https://www.bancoestado.cl/",
+    "rip? https://www.bancoripley.cl/"
+  ],
+
+  "url_desvio": "https://youtube.com/"
+}

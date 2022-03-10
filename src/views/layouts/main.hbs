@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        {{#if isReady}}
+            <link rel="stylesheet" href="/css/redbook.css">
+        {{else}}
+           <link rel="stylesheet" href="/css/styles.css">
+        {{/if}}
+
+        <title>headphones</title>
+    </head>
+    <body>
+
+        {{#if isReady}}
+            {{> redbook }}
+        {{else}}
+            {{> headphone }}
+        {{/if}}
+    
+        
+    </body>
+</html>
