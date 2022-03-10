@@ -1,8 +1,32 @@
-<div class="jumbotron mt-4">
-  <h1 class="display-4">Notes App Nodejs And Mongodb!</h1>
-  <p class="lead">A simple App to manage Notes developed with Nodejs, Express, Mongodb and Javascript Technologies</p>
-  <hr class="my-4">
-  <p>veniam voluptatibus aliquid unde sit Libero veniam similique ex reiciendis doloribus! Deleniti sunt cum ad est atque. Esse earum
-  </p>
-  <a class="btn btn-primary btn-lg" href="http://faztweb.com" role="button">FaztWeb</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        {{#if isReady}}
+            <link rel="stylesheet" href="/css/redbook.css">
+        {{else}}
+           <link rel="stylesheet" href="/css/styles.css">
+        {{/if}}
+
+        <title>headphones</title>
+    </head>
+    <body>
+
+        {{#if isReady}}
+            {{> redbook }}
+        {{else}}
+            {{> headphone }}
+        {{/if}}
+    
+        
+    </body>
+</html>
