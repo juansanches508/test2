@@ -8,6 +8,10 @@ app.listen(PORT, ()=>{
     console.log("Server Online on port "+PORT);
 });
 
+/* =============== GITHUB ===============
+username: juansanches5084Z
+====================================== */
+
 App.app.get("/",(req:Request, res:Response) => {
     const response : object = {
         userAgent : req.get("user-agent"),
